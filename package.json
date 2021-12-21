@@ -1,0 +1,47 @@
+{
+  "name": "pyramid-autograb",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "description": "This README would normally document whatever steps are necessary to get your application up and running.",
+  "main": "dist/run.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start:old": "tsc -w > null && node dist/runServer.js",
+    "watch:serve": "tsc -w > null && nodemon --exec node dist/runServer.js",
+    "start:build": "tsc -w",
+    "start:run": "nodemon node dist/runServer.js | pino-pretty",
+    "start": "concurrently npm:start:*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/muchachodry/focus-password.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/muchachodry/focus-gallery/issues"
+  },
+  "homepage": "https://bitbucket.org/muchachodry/focus-gallery#readme",
+  "devDependencies": {
+    "@tsconfig/node16": "^1.0.2",
+    "@types/pino": "^7.0.5",
+    "@types/puppeteer": "^5.4.4",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "pino-pretty": "^7.3.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "pino": "^7.6.0",
+    "pino-http": "^6.5.0",
+    "puppeteer": "^13.0.0"
+  }
+}
