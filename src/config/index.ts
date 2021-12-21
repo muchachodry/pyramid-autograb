@@ -7,7 +7,7 @@ const config = {
     user: '',
     pass: '',
   },
-  entryUrl: 'https://cj115.com/#/login',
+  entryUrl: '',
   maxLoots: 50,
 };
 export { config };
