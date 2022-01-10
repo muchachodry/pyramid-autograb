@@ -4,8 +4,8 @@ const config = {
     level: 'debug',
   },
   login: {
-    user: '',
-    pass: '',
+    user: 'muchachodry',
+    pass: 'dry007sn',
   },
   entryUrl: 'https://cj115.com/#/login',
   maxLoots: 50,
