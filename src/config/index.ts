@@ -4,8 +4,8 @@ const config = {
     level: 'debug',
   },
   login: {
-    user: 'muchachodry',
-    pass: 'dry007sn',
+    user: '',
+    pass: '',
   },
   entryUrl: '',
   maxLoots: 50,
